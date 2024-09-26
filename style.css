@@ -1,0 +1,89 @@
+/* font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal; */
+
+/* font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+/* Normalizacion: */
+
+* {
+  padding: o;
+  margin: 0;
+  box-sizing: border-box; /*Para mantenere ancho y alto a pesar del padding y border*/
+  font-family: "Roboto Mono", monospace;
+  list-style: none; /*Quitar los puntos o decoracion de las listas*/
+  text-decoration: none; /*Esto quita el subrayado en los enlaces*/
+  color: white;
+}
+
+body {
+  background-color: black; /*TODO: borrar cuando se tenga el resultado final*/
+}
+
+header {
+  position: fixed; /* esto hace que el header se quede fijo en la parte superior */
+  right: 0;
+  top: 0;
+  z-index: 100; /* esto hace que el header se muestre por encima de todos los demas elementos */
+  width: 100%;
+  display: flex; /* para que los elementos del navbar aparezcan en linea */
+  align-items: center; /* centra verticalmente */
+  justify-content: space-between; /* los elmentos se separan -logo y navbar- */
+  padding: 15px 3%;
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800; /*Estes es el grueso de las letras*/
+}
+
+.navlist {
+  display: flex; /*se acomodan lo elementos de la ul uno al lado del otro*/
+}
+
+.navlist a {
+  margin-left: 60px; /*eso es para separar las palabras de la navbar*/
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent; /*Estes es un subrayado transparente*/
+  transition: all 0.5s ease; /*para transicione todas pas propiedades por .5 segundos*/
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid white; /*surayado blanco cuando pasamos con el mouse sobre las opciones de la navbar*/
+}
+
+#menu-icon {
+  display: none;
+  /* se pone en none para que solo se vea cuando la pagina esta colapsada de forma horizontal */
+}
+#menu-icon {
+  font-size: 35px;
+  color: white;
+  z-index: 101; /* para que este sobre el header */
+  cursor: pointer; /* para que aparezca la manito */
+}
+#menu-toggle {
+  display: none;
+  /* nunca quiero que se vea el checkbox */
+}
+.menu-icon-action {
+  display: none;
+  /* para que no se le pueda hacer click */
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg, #2f2638 0%, #432553 25%, #1a0921 75%);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
