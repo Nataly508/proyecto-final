@@ -80,10 +80,87 @@ header {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(245.59deg, #2f2638 0%, #432553 25%, #1a0921 75%);
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 2rem;
+  background: linear-gradient(
+    245.59deg,
+    #2f2638 0%,
+    #432553 25%,
+    #1a0921 75%
+  ); /*fondo de color grdiente*/
+  position: relative; /*Para que sea relativo el contenedor (para poder usar top, bottom, left, right)*/
+  display: grid; /*Para difivid el hero section en 2 columnas*/
+  grid-template-columns: 1fr 1fr; /*las dos columnas*/
+  align-items: center; /*Para alinear verticalmente el hero*/
+  gap: 2rem; /*para que haya espacio de 2 rem entre las dos columnas*/
+}
+
+section {
+  padding: 0 8%;
+}
+
+.hero-text h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 55px;
+  line-height: 1;
+  margin: 0 0 30px;
+  font-weight: lighter;
+}
+
+.hero-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.hero-text h4 {
+  font-size: 18;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 80%;
+  margin-bottom: 40px;
+  line-height: 1.99;
+}
+
+.hero-img img {
+  width: 350px;
+  margin: 10% 0 0 10%;
+  height: auto;
+  transition: all 5s linear;
+}
+
+.hero-img img:hover {
+  width: 400px;
+  opacity: 0.8;
+}
+
+.hero-text a {
+  display: inline-block;
+  background-color: #40334c;
+  border: 1px solid transparent;
+  padding: 15px;
+  line-height: 1.4;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.hero-text a:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  transform: translateX(6px);
+}
+
+.hero-text a.github {
+  background-color: transparent;
+  border: 1px solid white;
+  margin: 20px;
+}
+
+.hero-text a.github i {
+  vertical-align: middle;
+  margin-right: 5px;
 }
