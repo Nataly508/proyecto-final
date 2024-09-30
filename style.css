@@ -19,10 +19,6 @@
   color: white;
 }
 
-body {
-  background-color: black; /*TODO: borrar cuando se tenga el resultado final*/
-}
-
 header {
   position: fixed; /* esto hace que el header se quede fijo en la parte superior */
   right: 0;
@@ -39,6 +35,7 @@ header {
 .logo {
   font-size: 30px;
   font-weight: 800; /*Estes es el grueso de las letras*/
+  color: transparent;
 }
 
 .navlist {
@@ -80,11 +77,12 @@ header {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(
-    245.59deg,
-    #2f2638 0%,
-    #432553 25%,
-    #1a0921 75%
+  background-color: #8a0651;
+  background-image: linear-gradient(
+    225deg,
+    #8a0651 0%,
+    #411e63 50%,
+    #01131d 100%
   ); /*fondo de color grdiente*/
   position: relative; /*Para que sea relativo el contenedor (para poder usar top, bottom, left, right)*/
   display: grid; /*Para difivid el hero section en 2 columnas*/
